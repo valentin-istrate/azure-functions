@@ -1,11 +1,11 @@
 ﻿namespace LnL.Functions.Services
 {
-    using System.Threading.Tasks;
     using Database.Context;
     using Database.Models;
     using Interface;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Logging;
+    using System.Threading.Tasks;
 
     public class WeatherService : IWeatherService
     {

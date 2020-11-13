@@ -1,10 +1,10 @@
-﻿namespace Demo.GreetingDurableFunction.Functions.Activities
+﻿namespace Demo.GreetingDurableFunction.Functions.Activity
 {
-    using System;
-    using System.Collections.Generic;
     using Microsoft.Azure.WebJobs;
     using Microsoft.Azure.WebJobs.Extensions.DurableTask;
     using Microsoft.Extensions.Logging;
+    using System;
+    using System.Collections.Generic;
 
     public class GreetingLoggerActivity
     {

@@ -1,9 +1,9 @@
 ﻿namespace Demo.GreetingDurableFunction.Extensions
 {
-    using System;
-    using System.Linq;
     using Microsoft.AspNetCore.WebUtilities;
     using Microsoft.Extensions.Primitives;
+    using System;
+    using System.Linq;
 
     internal static class UriExtensions
     {

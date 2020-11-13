@@ -1,11 +1,11 @@
 namespace LnL.Functions.Functions
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
     using Microsoft.Azure.WebJobs;
     using Microsoft.Extensions.Logging;
     using Services.Interface;
+    using System;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
 
     public class WeatherForecastTimerTrigger
     {

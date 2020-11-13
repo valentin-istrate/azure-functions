@@ -1,9 +1,9 @@
 ﻿namespace Demo.GreetingDurableFunction.Services
 {
-    using System;
-    using System.Threading.Tasks;
     using Interface;
     using Microsoft.Extensions.Logging;
+    using System;
+    using System.Threading.Tasks;
 
     internal class MockDelayService : IMockDelayService
     {

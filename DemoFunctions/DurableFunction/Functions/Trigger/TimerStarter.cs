@@ -1,11 +1,11 @@
-namespace Demo.GreetingDurableFunction.Functions.Triggers
+namespace Demo.GreetingDurableFunction.Functions.Trigger
 {
-    using System.Threading.Tasks;
+    using Demo.GreetingDurableFunction.Functions.Orchestrator;
     using Microsoft.Azure.WebJobs;
     using Microsoft.Azure.WebJobs.Extensions.DurableTask;
     using Microsoft.Extensions.Logging;
     using Models;
-    using Orchestrators;
+    using System.Threading.Tasks;
 
     public class TimerStarter
     {

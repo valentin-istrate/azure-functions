@@ -1,9 +1,9 @@
 ﻿namespace LnL.Functions.Database.Context
 {
-    using System;
     using Constants;
     using Microsoft.EntityFrameworkCore;
     using Models;
+    using System;
 
     public class WeatherDbContext : DbContext
     {

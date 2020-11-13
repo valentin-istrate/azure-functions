@@ -1,7 +1,7 @@
 namespace Demo.GreetingDurableFunction.Services.Interface
 {
-    using System.Net.Http;
     using Models;
+    using System.Net.Http;
 
     public interface IPersonService
     {

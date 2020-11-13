@@ -4,7 +4,6 @@
 
 namespace LnL.Functions
 {
-    using System;
     using Constants;
     using Database.Context;
     using Microsoft.Azure.Functions.Extensions.DependencyInjection;
@@ -12,6 +11,7 @@ namespace LnL.Functions
     using Microsoft.Extensions.DependencyInjection;
     using Services;
     using Services.Interface;
+    using System;
 
     public class Startup : FunctionsStartup
     {

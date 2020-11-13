@@ -1,7 +1,7 @@
 ﻿namespace LnL.Functions.Services.Interface
 {
-    using System.Threading.Tasks;
     using Database.Models;
+    using System.Threading.Tasks;
 
     public interface IWeatherService
     {

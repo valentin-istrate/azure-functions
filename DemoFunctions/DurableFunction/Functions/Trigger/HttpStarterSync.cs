@@ -1,14 +1,14 @@
-namespace Demo.GreetingDurableFunction.Functions.Triggers
+namespace Demo.GreetingDurableFunction.Functions.Trigger
 {
-    using System;
-    using System.Net.Http;
-    using System.Threading.Tasks;
+    using Demo.GreetingDurableFunction.Functions.Orchestrator;
     using Microsoft.Azure.WebJobs;
     using Microsoft.Azure.WebJobs.Extensions.DurableTask;
     using Microsoft.Azure.WebJobs.Extensions.Http;
     using Microsoft.Extensions.Logging;
-    using Orchestrators;
     using Services.Interface;
+    using System;
+    using System.Net.Http;
+    using System.Threading.Tasks;
 
     public class HttpStarterSync
     {
@@ -17,7 +17,7 @@ namespace Demo.GreetingDurableFunction.Functions.Triggers
 
         private const int TimeoutInSeconds = 300;
 
-        public HttpStarterSync(IPersonService personService, ILogger<HttpStarterSync> log )
+        public HttpStarterSync(IPersonService personService, ILogger<HttpStarterSync> log)
         {
             this.personService = personService;
             this.log = log;

@@ -1,11 +1,11 @@
-namespace Demo.GreetingDurableFunction.Functions.Orchestrators
+namespace Demo.GreetingDurableFunction.Functions.Orchestrator
 {
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
-    using Activities;
+    using Demo.GreetingDurableFunction.Functions.Activity;
     using Microsoft.Azure.WebJobs;
     using Microsoft.Azure.WebJobs.Extensions.DurableTask;
     using Models;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
 
     public class GreetingOrchestrator
     {

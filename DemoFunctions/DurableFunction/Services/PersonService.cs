@@ -1,7 +1,8 @@
-namespace Demo.DurableFunction.Services
+namespace Demo.GreetingDurableFunction.Services
 {
     using System.Net.Http;
     using Constants;
+    using Demo.GreetingDurableFunction.Constants;
     using Extensions;
     using Interface;
     using Models;

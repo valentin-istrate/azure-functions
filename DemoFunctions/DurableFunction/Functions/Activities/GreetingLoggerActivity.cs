@@ -1,4 +1,4 @@
-﻿namespace Demo.DurableFunction.Functions.Activities
+﻿namespace Demo.GreetingDurableFunction.Functions.Activities
 {
     using System;
     using System.Collections.Generic;

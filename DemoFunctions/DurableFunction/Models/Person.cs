@@ -1,4 +1,4 @@
-﻿namespace Demo.DurableFunction.Models
+﻿namespace Demo.GreetingDurableFunction.Models
 {
     public class Person
     {

@@ -1,4 +1,4 @@
-﻿namespace Demo.DurableFunction.Functions.Orchestrators
+﻿namespace Demo.GreetingDurableFunction.Functions.Orchestrators
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;

@@ -1,4 +1,4 @@
-namespace Demo.DurableFunction.Services.Interface
+namespace Demo.GreetingDurableFunction.Services.Interface
 {
     using System.Net.Http;
     using Models;

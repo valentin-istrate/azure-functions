@@ -1,4 +1,4 @@
-﻿namespace Demo.DurableFunction.Constants
+﻿namespace Demo.GreetingDurableFunction.Constants
 {
     internal static class RequestConstants
     {

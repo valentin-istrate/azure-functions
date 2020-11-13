@@ -1,4 +1,4 @@
-namespace Demo.DurableFunction.Functions.Activities
+namespace Demo.GreetingDurableFunction.Functions.Activities
 {
     using System.Threading.Tasks;
     using Microsoft.Azure.WebJobs;

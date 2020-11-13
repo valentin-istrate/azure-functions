@@ -1,10 +1,10 @@
 ﻿
-using Demo.DurableFunction;
+using Demo.GreetingDurableFunction;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 
-namespace Demo.DurableFunction
+namespace Demo.GreetingDurableFunction
 {
     using Microsoft.Azure.Functions.Extensions.DependencyInjection;
     using Microsoft.Extensions.DependencyInjection;

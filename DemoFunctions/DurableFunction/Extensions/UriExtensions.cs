@@ -1,4 +1,4 @@
-﻿namespace Demo.DurableFunction.Extensions
+﻿namespace Demo.GreetingDurableFunction.Extensions
 {
     using System;
     using System.Linq;

@@ -1,4 +1,4 @@
-namespace Demo.DurableFunction.Functions.Triggers
+namespace Demo.GreetingDurableFunction.Functions.Triggers
 {
     using System;
     using System.Net.Http;

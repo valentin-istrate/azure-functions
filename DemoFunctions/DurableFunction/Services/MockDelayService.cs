@@ -1,4 +1,4 @@
-﻿namespace Demo.DurableFunction.Services
+﻿namespace Demo.GreetingDurableFunction.Services
 {
     using System;
     using System.Threading.Tasks;

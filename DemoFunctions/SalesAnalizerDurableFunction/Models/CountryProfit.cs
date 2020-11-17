@@ -1,4 +1,4 @@
-﻿namespace SalesAnalizerDurableFunction.Models
+﻿namespace Demo.SalesAnalyzerDurableFunction.Models
 {
     public class CountryProfit
     {

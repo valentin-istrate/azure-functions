@@ -1,12 +1,12 @@
-namespace SalesAnalizerDurableFunction.Functions.Activity
+namespace Demo.SalesAnalyzerDurableFunction.Functions.Activity
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
     using Microsoft.Azure.WebJobs;
     using Microsoft.Azure.WebJobs.Extensions.DurableTask;
     using Microsoft.Extensions.Logging;
-    using SalesAnalizerDurableFunction.Models;
-    using System.Threading.Tasks;
-    using SalesAnalizerDurableFunction.Services.Interface;
-    using System.Collections.Generic;
+    using Models;
+    using Services.Interface;
 
     public class AnalyzeSalesActivity
     {
@@ -27,17 +27,17 @@ namespace SalesAnalizerDurableFunction.Functions.Activity
         [FunctionName(nameof(AnalyzeSalesActivity))]
         public async Task<ProfitReport> AnalyzeSales([ActivityTrigger] RegionData regionData)
         {
-            logger.LogDebug($"Running sale analysis on {regionData.Region}");
+            logger.LogDebug($"Running sale analysis on {regionData.FileName}");
 
             IReadOnlyList<SaleInfo> saleInfos = await csvParser.ParseSaleData(regionData.DataCsv);
 
             var report =  new ProfitReport
             {
-                Region = regionData.Region,
+                FileName = regionData.FileName,
                 CountriesProfits = salesAnalyzer.AnalyzeProfits(saleInfos)
             };
 
-            logger.LogDebug($"Analysis complete for region {regionData.Region}.");
+            logger.LogDebug($"Analysis complete for region {regionData.FileName}.");
             return report;
         }
     }

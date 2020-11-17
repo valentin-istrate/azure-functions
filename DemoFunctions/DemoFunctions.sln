@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Functions", "Functions\Func
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreetingDurableFunction", "GreetingDurableFunction\GreetingDurableFunction.csproj", "{994A5639-FEE4-4C69-B8CE-0882BF27A53D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesAnalizerDurableFunction", "SalesAnalizerDurableFunction\SalesAnalizerDurableFunction.csproj", "{0FAC76C6-6433-465C-A42C-218B034A57F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesAnalyzerDurableFunction", "SalesAnalizerDurableFunction\SalesAnalyzerDurableFunction.csproj", "{0FAC76C6-6433-465C-A42C-218B034A57F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

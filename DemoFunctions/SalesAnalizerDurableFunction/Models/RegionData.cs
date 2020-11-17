@@ -1,8 +1,8 @@
-﻿namespace SalesAnalizerDurableFunction.Models
+﻿namespace Demo.SalesAnalyzerDurableFunction.Models
 {
     public class RegionData
     {
-        public string Region { get; set; }
+        public string FileName { get; set; }
         public string DataCsv { get; set; }
     }
 }

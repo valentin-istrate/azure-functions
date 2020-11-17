@@ -1,15 +1,15 @@
 ﻿
-namespace SalesAnalizerDurableFunction.Services
+namespace Demo.SalesAnalyzerDurableFunction.Services
 {
-    using CsvHelper;
-    using Microsoft.Extensions.Logging;
-    using SalesAnalizerDurableFunction.Models;
-    using SalesAnalizerDurableFunction.Services.Interface;
     using System.Collections.Generic;
     using System.Globalization;
     using System.IO;
     using System.Linq;
     using System.Threading.Tasks;
+    using CsvHelper;
+    using Interface;
+    using Microsoft.Extensions.Logging;
+    using Models;
 
     public class CsvParser : ICsvParser
     {

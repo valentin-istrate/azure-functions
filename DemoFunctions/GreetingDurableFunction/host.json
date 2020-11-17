@@ -2,8 +2,8 @@
   "version": "2.0",
   "logging": {
     "logLevel": {
-      "Demo.DurableFunction.Functions.Activities.GreetingLoggerActivity": "Information",
-      "Demo.DurableFunction.Services.MockDelayService": "Debug",
+      "Demo.GreetingDurableFunction.Functions.Activities.GreetingLoggerActivity": "Information",
+      "Demo.GreetingDurableFunction.Services.MockDelayService": "Debug",
       "default": "None"
     },
     "functionTimeout": "00:10:00",

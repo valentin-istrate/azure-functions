@@ -1,7 +1,7 @@
-﻿namespace SalesAnalizerDurableFunction.Services.Interface
+﻿namespace Demo.SalesAnalyzerDurableFunction.Services.Interface
 {
-    using SalesAnalizerDurableFunction.Models;
     using System.Collections.Generic;
+    using Models;
 
     public interface ISalesAnalyzer
     {

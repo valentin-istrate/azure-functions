@@ -1,12 +1,12 @@
 ﻿
-namespace SalesAnalizerDurableFunction.Services
+namespace Demo.SalesAnalyzerDurableFunction.Services
 {
-    using MoreLinq;
-    using SalesAnalizerDurableFunction.Constants;
-    using SalesAnalizerDurableFunction.Models;
-    using SalesAnalizerDurableFunction.Services.Interface;
     using System.Collections.Generic;
     using System.Linq;
+    using Constants;
+    using Interface;
+    using Models;
+    using MoreLinq;
 
     public class SalesAnalyzer : ISalesAnalyzer
     {

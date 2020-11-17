@@ -1,5 +1,5 @@
 ﻿
-namespace SalesAnalizerDurableFunction.Constants
+namespace Demo.SalesAnalyzerDurableFunction.Constants
 { 
     public static class SalesChannelType
     {

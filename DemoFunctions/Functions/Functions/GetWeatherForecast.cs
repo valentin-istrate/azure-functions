@@ -1,12 +1,13 @@
 namespace LnL.Functions.Functions
 {
-    using System.Threading.Tasks;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Azure.WebJobs;
     using Microsoft.Azure.WebJobs.Extensions.Http;
     using Microsoft.Extensions.Logging;
     using Services.Interface;
+    using System.Threading.Tasks;
+    using Database.Models;
 
     public class GetWeatherForecast
     {
@@ -29,7 +30,7 @@ namespace LnL.Functions.Functions
         {
             logger.LogInformation($"Requesting forecast for {city}.");
 
-            var forecast = await weatherService.GetForecastAsync(city);
+            WeatherForecast forecast = await weatherService.GetForecastAsync(city);
 
             return new OkObjectResult(forecast);
         }

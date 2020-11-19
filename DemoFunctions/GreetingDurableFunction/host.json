@@ -1,0 +1,17 @@
+{
+  "version": "2.0",
+  "logging": {
+    "logLevel": {
+      "Demo.GreetingDurableFunction.Functions.Activity.GreetingLoggerActivity": "Information",
+      "Demo.GreetingDurableFunction.Services.MockDelayService": "Debug",
+      "default": "None"
+    },
+    "functionTimeout": "00:10:00",
+    "applicationInsights": {
+      "samplingExcludedTypes": "Request",
+      "samplingSettings": {
+        "isEnabled": true
+      }
+    }
+  }
+}

@@ -1,10 +1,10 @@
 ﻿namespace LnL.Functions.Services
 {
-    using System;
-    using System.Collections.Generic;
     using Database.Models;
     using Interface;
     using Microsoft.Extensions.Logging;
+    using System;
+    using System.Collections.Generic;
 
     public class WeatherSensorService : IWeatherSensorService
     {

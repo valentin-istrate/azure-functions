@@ -1,12 +1,12 @@
 namespace LnL.Functions.Functions
 {
-    using System.IO;
+    using Database.Models;
     using Microsoft.Azure.WebJobs;
     using Microsoft.Extensions.Logging;
+    using Services.Interface;
+    using System.IO;
     using System.Text.Json;
     using System.Threading.Tasks;
-    using Database.Models;
-    using Services.Interface;
 
     public class WeatherForecastBlobTrigger
     {

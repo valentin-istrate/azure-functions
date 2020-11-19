@@ -1,0 +1,16 @@
+{
+  "version": "2.0",
+  "logging": {
+    "logLevel": {
+      "Demo.SalesAnalyzerDurableFunction.Functions.Orchestrator.SalesAnalyzerOrchestrator": "Information",
+      "default": "None"
+    },
+    "functionTimeout": "00:10:00",
+    "applicationInsights": {
+      "samplingExcludedTypes": "Request",
+      "samplingSettings": {
+        "isEnabled": true
+      }
+    }
+  }
+}

@@ -1,11 +1,12 @@
 ﻿namespace LnL.Functions.Services
 {
-    using System.Threading.Tasks;
+    using System;
     using Database.Context;
     using Database.Models;
     using Interface;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Logging;
+    using System.Threading.Tasks;
 
     public class WeatherService : IWeatherService
     {
@@ -20,7 +21,8 @@
 
         public async Task<WeatherForecast> GetForecastAsync(string city)
         {
-            var weatherForecast = await weatherDb.WeatherForecast.FirstOrDefaultAsync(forecast => forecast.City.ToLower() == city.ToLower());
+            WeatherForecast weatherForecast = await weatherDb.WeatherForecast
+                .LastOrDefaultAsync(forecast => string.Equals(forecast.City, city, StringComparison.CurrentCultureIgnoreCase));
             return weatherForecast;
         }
 

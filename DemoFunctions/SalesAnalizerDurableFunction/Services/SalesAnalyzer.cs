@@ -13,7 +13,7 @@ namespace Demo.SalesAnalyzerDurableFunction.Services
         public IReadOnlyList<CountryProfit> AnalyzeProfits(IReadOnlyList<SaleInfo> saleInfos)
         {
 
-            var countiesData = saleInfos.GroupBy(saleInfo => saleInfo.Country);
+            IEnumerable<IGrouping<string, SaleInfo>> countiesData = saleInfos.GroupBy(saleInfo => saleInfo.Country);
             IEnumerable<CountryProfit> countryProfits = countiesData.Select(countryData => new CountryProfit
             {
                 Country = countryData.Key,

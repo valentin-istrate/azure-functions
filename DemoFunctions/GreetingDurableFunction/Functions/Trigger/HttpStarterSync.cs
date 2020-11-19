@@ -9,6 +9,7 @@ namespace Demo.GreetingDurableFunction.Functions.Trigger
     using System;
     using System.Net.Http;
     using System.Threading.Tasks;
+    using Models;
 
     public class HttpStarterSync
     {
@@ -29,7 +30,7 @@ namespace Demo.GreetingDurableFunction.Functions.Trigger
             HttpRequestMessage req,
             [DurableClient] IDurableOrchestrationClient orchestrator)
         {
-            var person = personService.GetPersonFromRequestAsync(req);
+            Person person = personService.GetPersonFromRequestAsync(req);
             string instanceId = await orchestrator.StartNewAsync(nameof(GreetingOrchestrator), person);
 
             log.LogInformation($"Started orchestration with ID = '{instanceId}'.");

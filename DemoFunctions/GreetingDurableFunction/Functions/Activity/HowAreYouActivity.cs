@@ -21,7 +21,7 @@
         [FunctionName(nameof(HowAreYouActivity))]
         public async Task<string> AskHowAreYouAsync([ActivityTrigger] Person person)
         {
-            await mockDelayService.MockDelayAsync(500, 3000);
+            await mockDelayService.MockDelayAsync(500, 1000);
 
             log.LogInformation($"Saying hello to {person}.");
             return $"How are you, {person}?";

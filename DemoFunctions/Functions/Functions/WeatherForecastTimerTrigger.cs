@@ -6,6 +6,7 @@ namespace LnL.Functions.Functions
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
+    using Database.Models;
 
     public class WeatherForecastTimerTrigger
     {
@@ -32,7 +33,7 @@ namespace LnL.Functions.Functions
             string city = GetRandomCity();
             logger.LogInformation($"Getting temperature for {city}.");
 
-            var forecast = weatherSensorService.GetForecast(city);
+            WeatherForecast forecast = weatherSensorService.GetForecast(city);
             await weatherService.StoreForecastAsync(forecast);
         }
 

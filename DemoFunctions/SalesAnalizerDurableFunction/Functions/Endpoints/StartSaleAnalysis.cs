@@ -59,7 +59,7 @@ namespace Demo.SalesAnalyzerDurableFunction.Functions.Endpoints
                 throw new InvalidDataException("Expected multipart content.");
             }
 
-            var dataFiles = await req.Content.ReadAsMultipartAsync();
+            MultipartMemoryStreamProvider dataFiles = await req.Content.ReadAsMultipartAsync();
             return dataFiles;
         }
     }

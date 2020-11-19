@@ -2,7 +2,7 @@
   "version": "2.0",
   "logging": {
     "logLevel": {
-      "Demo.GreetingDurableFunction.Functions.Activities.GreetingLoggerActivity": "Information",
+      "Demo.GreetingDurableFunction.Functions.Activity.GreetingLoggerActivity": "Information",
       "Demo.GreetingDurableFunction.Services.MockDelayService": "Debug",
       "default": "None"
     },

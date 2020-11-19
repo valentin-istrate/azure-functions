@@ -17,7 +17,7 @@ namespace Demo.GreetingDurableFunction.Functions.Trigger
         }
         [FunctionName(nameof(TimerStarter))]
         public async Task RunAsync(
-            [TimerTrigger("0,30 * * * * *")] TimerInfo myTimer,
+            [TimerTrigger("0 * * * * *")] TimerInfo myTimer,
             [DurableClient] IDurableOrchestrationClient orchestrator)
         {
             var person = new Person

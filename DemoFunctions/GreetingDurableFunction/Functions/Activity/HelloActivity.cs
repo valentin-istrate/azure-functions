@@ -21,7 +21,7 @@ namespace Demo.GreetingDurableFunction.Functions.Activity
         [FunctionName(nameof(HelloActivity))]
         public async Task<string> SayHelloAsync([ActivityTrigger] Person person)
         {
-            await mockDelayService.MockDelayAsync(500, 3000);
+            await mockDelayService.MockDelayAsync(500, 1000);
             log.LogInformation($"Saying hello to {person}.");
             return $"Hello {person}!";
         }

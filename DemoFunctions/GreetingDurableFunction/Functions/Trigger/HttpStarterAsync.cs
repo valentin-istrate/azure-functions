@@ -8,6 +8,7 @@ namespace Demo.GreetingDurableFunction.Functions.Trigger
     using Services.Interface;
     using System.Net.Http;
     using System.Threading.Tasks;
+    using Models;
 
     public class HttpStarterAsync
     {
@@ -25,7 +26,7 @@ namespace Demo.GreetingDurableFunction.Functions.Trigger
             HttpRequestMessage req,
             [DurableClient] IDurableOrchestrationClient starter)
         {
-            var person = personService.GetPersonFromRequestAsync(req);
+            Person person = personService.GetPersonFromRequestAsync(req);
             string instanceId = await starter.StartNewAsync(nameof(GreetingOrchestrator), person);
 
             log.LogInformation($"Started orchestration with ID = '{instanceId}'.");

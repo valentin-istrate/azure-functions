@@ -21,7 +21,7 @@
         [FunctionName(nameof(GoodbyeActivity))]
         public async Task<string> SayGoodbyeAsync([ActivityTrigger] Person person)
         {
-            await mockDelayService.MockDelayAsync(500, 3000);
+            await mockDelayService.MockDelayAsync(500, 1000);
             log.LogInformation($"Saying goodbye to {person}!");
             return $"Goodbye {person}!";
         }

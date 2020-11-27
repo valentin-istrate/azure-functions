@@ -1,6 +1,7 @@
 ﻿namespace LnL.Functions.Services
 {
     using System;
+    using System.Linq;
     using Database.Context;
     using Database.Models;
     using Interface;
@@ -22,7 +23,9 @@
         public async Task<WeatherForecast> GetForecastAsync(string city)
         {
             WeatherForecast weatherForecast = await weatherDb.WeatherForecast
-                .LastOrDefaultAsync(forecast => string.Equals(forecast.City, city, StringComparison.CurrentCultureIgnoreCase));
+                .Where(forecast => forecast.City == city)
+                .OrderByDescending(forecast=>forecast.Time)
+                .FirstOrDefaultAsync();
             return weatherForecast;
         }
 
